@@ -1,0 +1,62 @@
+import numpy as np
+
+# Constants
+L = 12 # m
+w = 10 # kN/m
+step = 0.01 # m
+
+# Part (a)
+M_0 = (w*(-6*0**2 + 6*L*0 - L**2))/12
+M_L = (w*(-6*L**2 + 6*L*L - L**2))/12
+V_0 = w*(L)/2 - w*0
+V_L = w*(L)/2 - w*L
+print('(a)')
+print(f"Bending moment at x=0: {M_0:.2f} kNm")
+print(f"Bending moment at x=L: {M_L:.2f} kNm")
+print(f"Shear force at x=0: {V_0:.2f} kN")
+print(f"Shear force at x=L: {V_L:.2f} kN")
+print(" ")
+
+# Part (b)
+x_1 = (6*L - np.sqrt(6**2*L**2 - 4*(-6)*(-L**2)))/(2*(-6))
+x_2 = (6*L + np.sqrt(6**2*L**2 - 4*(-6)*(-L**2)))/(2*(-6))
+print('(b)')
+print(f" Points of contra-flexure: x={x_1:.2f} m and x={x_2:.2f} m")
+print(' ')
+# Part (c)
+x_zero_V = L/2
+print('(c)')
+print(f" Point where shear force is zero: x={x_zero_V:.2f} m")
+
+# Part (d)
+x = np.arange(0, L, step)
+
+M = (w*(-6*x**2 + 6*L*x - L**2))/12
+
+# Part (e)
+V = w*(L - x)
+
+# Part (f)
+min_M_indices = np.where(np.abs(M) == np.abs(M).min())[0]
+min_M_points = x[min_M_indices]
+print(' ')
+print(f" (f) Points of minimum absolute bending moment: x={min_M_points}")
+
+# Part (g)
+x_c1_error = np.abs(x_1 - min_M_points).max()
+x_c2_error = np.abs(x_2 - min_M_points).max()
+print(' ')
+print('(g)')
+print(f"Error for point of contra-flexure 1: {x_c1_error:.4f} m")
+print(f"Error for point of contra-flexure 2: {x_c2_error:.4f} m")
+
+# Part (h)
+max_M_index = np.argmax(np.abs(M))
+
+min_M_index = np.argmin(np.abs(M))
+max_M_point = x[max_M_index]
+min_M_point = x[min_M_index]
+print(' ')
+print('h')
+print(f"Point of maximum bending moment: x={max_M_point:.2f} m")
+print(f"Point of minimum bending moment: x={min_M_point:.2f} m")
