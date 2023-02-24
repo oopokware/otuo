@@ -1,0 +1,123 @@
+#6944621
+#A CAR DEALERSHIP PROGRAM
+print('WELCOME TO OAKVILLE CAR DEALERSHIP\n')
+interest=input('Would you like to proceed? \n yes/no\n')
+if interest=='yes':
+    print('HERE ARE OUR AVAILABLE CAR BRANDS: \n 1. TOYOTA \n 2. MERCEDEZ-BENZ \n 3. HONDA \n 4. HYUNDAI \n \
+5. VOLKSWAGEN')
+elif interest=='no':
+    print('THANK YOU!!!') 
+    
+brand=input('Type the number of the car brand you are interested in: \n')
+
+if brand=='1':
+    print('TOYOTA CARS AVAILABLE: \n 1. Camry \n 2. Corolla \n \
+3. Yaris \n 4. Prado \n 5. Land Cruiser \n 6. Lexus')
+elif brand=='2':
+    print('MERCEDEZ-BENZ CARS AVAILABLE: \n 1. GLA 250 SUV \n 2. G 550 SUV \n \
+3. MERCEDEZ-MAYBACH GLS 600 SUV \n 4. A 220 SEDAN \n 5. C 300 4MATIC \n 6. AMG EQE SEDAN')
+elif brand=='3':
+    print('HONDA CARS AVAILABLE: \n 1. CIVIC \n 2. CR-V \n \
+3. ACCORD \n 4. CITY \n 5. HR-V \n 6. FIT')
+elif brand=='4':
+    print('HYUNDAI CARS AVAILABLE: \n 1. TUCSON \n 2. AURA \n \
+3. i20 \n 4. CRETA \n 5. SONATA \n 6. ELANTRA')
+elif brand=='5':
+    print('VOLKSWAGEN CARS AVAILABLE: \n 1. JETTA \n 2. POLO \n \
+3. PASSAT \n 4. BEETLE \n 5. TIGUAN \n 6. TOUREG')
+else:
+    print('Sorry the car brand you typed is not available.') 
+    
+car=input('INDICATE YOUR CHOICE OF CAR BY TYPING IN THE NUMBER AGAINST IT: \n')
+if brand=='1' and car=='1':
+    print('Camry has a price of US$ 15,000.00. \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='1' and car=='2':
+    print('Corolla has a price of US$ 12,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='1' and car=='3':
+    print('Yaris has a price of US$ 8,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='1' and car=='4':
+    print('Prado has a price of US$ 85,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='1' and car=='5':
+    print('Land Cruiser has a price of US$ 100,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='1' and car=='6':
+    print('Lexus has a price of US$ 200,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='2' and car=='1':
+    print('GLA 250 SUV has a price of US$ 40,500.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='2' and car=='2':
+    print('G 550 SUV has a price of US$ 80,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='2' and car=='3':
+    print('MERCEDEZ-MAYBACH GLS 600 SUV has a price of US$ 70,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='2' and car=='4':
+    print('A 220 SEDAN has a price of US$ 65,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='2' and car=='5':
+    print('C 300 4MATIC has a price of US$ 50,500.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='2' and car=='6':
+    print('AMG EQE SEDAN has a price of US$ 10,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='3' and car=='1':
+    print('CIVIC has a price of US$ 9,500.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='3' and car=='2':
+    print('CR-V has a price of US$ 15,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='3' and car=='3':
+    print('ACCORD has a price of US$ 8,600.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='3' and car=='4':
+    print('CITY has a price of US$ 10,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='3' and car=='5':
+    print('HR-V has a price of US$ 16,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='3' and car=='6':
+    print('FIT has a price of US$ 5,500.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='4' and car=='1':
+    print('TUCSON has a price of US$ 13,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='4' and car=='2':
+    print('AURA has a price of US$ 8,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='4' and car=='3':
+    print('i20 has a price of US$ 10,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='4' and car=='4':
+    print('CRETA has a price of US$ 11,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='4' and car=='5':
+    print('SONATA has a price of US$ 6,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='4' and car=='6':
+    print('ELANTRA has a price of US$ 13,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='5' and car=='1':
+    print('JETTA has a price of US$ 50,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='5' and car=='2':
+    print('POLO has a price of US$ 60,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='5' and car=='3':
+    print('PASSAT has a price of US$ 65,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='5' and car=='4':
+    print('BEETLE has a price of US$ 45,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='5' and car=='5':
+    print('TIGUAN has a price of US$ 70,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+elif brand=='5' and car=='6':
+    print('TOUREG has a price of US$ 80,000.00.  \n \
+  Thank you for working with OAKVILLE CAR DEALERSHIP !!!')
+else:
+    print('Sorry. Please try again!!!')
